@@ -160,7 +160,7 @@ func (sc MySC) Handle(tr engine.Transaction, in []byte) ([]byte, error) {
             of what you’d get if you pull the ParallelChain SDKs from GitHub, or get them
             from Peter. I removed/added code comments, and presented a slightly different
             directory structure for clarity. This makes no difference to you if you are
-            a programmer developing a smart contract—say‘helloworld’—from scratch, but
+            a programmer developing a smart contract—say ‘helloworld’—from scratch, but
             if you are looking to get Peter’s sample smartcontracts up and running
             quickly,you cannot just copy and paste my bash shell commands into your
             machine’s terminal.
@@ -174,7 +174,7 @@ func (sc MySC) Handle(tr engine.Transaction, in []byte) ([]byte, error) {
           </TextSubHeading>
           <Text>
             Writing a smart contract using the ParallelChain™ SmartContract API is so
-            dead simple that we have decidedto immediately jump into example code in
+            dead simple that we have decided to immediately jump into example code in
             this section. To the side is what you can think of as a ‘helloworld’ smart
             contract, written in Go.
           </Text>
@@ -232,7 +232,7 @@ var SmartContract MySC`}
             {' '}
             that implements the
             {' '}
-            <code>SmartContract interface</code>
+            <code>SmartContract interface</code>:
           </Text>
           <Code language="go">
 {`// File: /parallelcore/smartcontract/smartcontract.go (part of the SmartContract API)
@@ -257,6 +257,7 @@ type SmartContract interface {
             <code>
               Handle
             </code>
+            &apos;s parameters.
           </Text>
         <ol>
           <li>
@@ -282,8 +283,8 @@ type SmartContract interface {
         </TextOnly>
         <TextAndCode>
           <Text>
-            The execution engine will then pass this into the
-            <code>Handle</code> method of your SmartContract.
+            The execution engine will then pass this into the <code>Handle</code> method
+            of your SmartContract.
           </Text>
           <Code language="go">
 {`// Example: Invocation of 'helloworld' smart contract using ParallelChain Client SDK
@@ -330,7 +331,7 @@ client.Invoke("helloworld", []byte(in))
         <TextAndCode>
           <Text>
             Now that you have a `<code>Go build</code>`-compilable package, run this command:
-            (make sure that you have your development environment set up)
+            (make sure that you have your development environment set up).
           </Text>
           <Code>
 {`// Bash shell
@@ -351,7 +352,7 @@ client.Invoke("helloworld", []byte(in))
                 or system administrators using the ParallelChain™ Peer CLI will use this
                 name to invoke the smart contract.
               </Text>
-            </li>ha
+            </li>
             <li>
               <Text>
                 <code>&lt;directory-to-go-build&gt;</code>: Relative link to a typical
@@ -394,12 +395,16 @@ client.Invoke("helloworld", []byte(in))
         <TextAndCode>
           <Text>
             If your development environment is setup by peter, and a ParallelChain™ peer is running
-            on your local machine, then you first need to set the below hard-coded environment
+            on your local machine, then you first need to set three hard-coded environment
             variables. These are used by the <em>ParallelChain Peer CLI</em> to target the
             appropriate peer nodes and authenticate its connections.
           </Text>
           <Code>
 {`// Bash shell
+export PCORE_ENDPOINTS=local.digital-transaction.net:5000
+export PCORE_CLIENT_ID=demo
+expore PCORE_CLIENT_CREDENTIAL=demopass
+
 sudo -E /opt/parallelcore/sbin/parallelcore smartcontract register <SC-name>-<SC-version> <tgz-to-deploy>
 `}
           </Code>
@@ -494,7 +499,7 @@ client.Invoke("helloworld", []byte(in))
             the client identity ‘demo,’ a client identity with role ‘app.’ By default, only
             clients with role ‘app’ can invoke smart contracts. The client identity ‘root’
             that you used in the ‘Deploying a Smart Contract’ section has a role of ‘admin.’
-            To learn more about client roles, check out “The ParallelChain Network Architecture”
+            To learn more about client roles, check out “The ParallelChain Network Architecture”.
           </Text>
           <Code>
 {`// Bash shell
