@@ -5,6 +5,7 @@ const useStyles = makeStyles((t) => ({
   container: {
     display: 'flex',
     width: '100%',
+    marginBottom: `${t.spacing(8)}px`,
   },
   textArea: {
     flexBasis: '550px',

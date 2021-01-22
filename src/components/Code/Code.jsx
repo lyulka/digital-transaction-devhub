@@ -1,23 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import Highlight from 'react-highlight';
 
 const useStyles = makeStyles((t) => ({
-  pre: {
+  code: {
     marginLeft: `${t.spacing(3)}px`,
-  },
-  default: {
-    color: t.palette.neutral.white,
   },
 }));
 
-export default function Code({ children }) {
+export default function Code({ children, language }) {
   const classes = useStyles();
 
   return (
-    <pre className={classes.pre}>
-      <code className={classes.default}>
+    <div className={classes.code}>
+      <Highlight
+        className={language}
+      >
         { children }
-      </code>
-    </pre>
+      </Highlight>
+    </div>
   );
 }
+
+Code.propTypes = {
+  language: PropTypes.oneOf(['javascript']).isRequired,
+};

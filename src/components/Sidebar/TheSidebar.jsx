@@ -15,10 +15,10 @@ const useStyles = makeStyles((t) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: `${t.spacing(2)}px 0`,
+    padding: `${t.spacing(2)}px 0 ${t.spacing(5)}px 0`,
   },
   logo: {
-    height: '60px',
+    height: '40px',
     margin: '0 auto',
   },
   devHubText: {
@@ -38,10 +38,10 @@ export default function TheSidebar() {
           className={classes.logo}
         />
         <Typography
-          variant="subtitle2"
+          variant="body2"
           className={classes.devHubText}
         >
-          Developer Hub
+          ParallelChain Developer Hub
         </Typography>
       </div>
       <SidebarItemGroup name="Concepts">
@@ -51,20 +51,52 @@ export default function TheSidebar() {
         <SidebarItem>
           ParallelChain Network Architecture
         </SidebarItem>
+        <SidebarItem>
+          ParallelCoreDB
+        </SidebarItem>
+        <SidebarItem>
+          Provable Immutability
+        </SidebarItem>
+        <SidebarItem>
+          Glossary of terms
+        </SidebarItem>
       </SidebarItemGroup>
       <SidebarItemGroup name="Tutorials">
         <SidebarItem to="/tutorials/writing-smart-contracts">
           Writing Smart Contracts
+        </SidebarItem>
+        <SidebarItem>
+          Writing Applications
+        </SidebarItem>
+      </SidebarItemGroup>
+      <SidebarItemGroup name="Interoperability">
+        <SidebarItem>
+          Worked Example - Commercial Paper
+        </SidebarItem>
+        <SidebarItem>
+          Worked Example - Extending Commercial Paper
+        </SidebarItem>
+        <SidebarItem>
+          Worked Example - Secured Asset Transfer
         </SidebarItem>
       </SidebarItemGroup>
       <SidebarItemGroup name="Reference Documentation">
         <SidebarItem>
           ParallelCore Client Go SDK
         </SidebarItem>
+        <SidebarItem>
+          ParallelCore SmartContract Go SDK
+        </SidebarItem>
+        <SidebarItem>
+          ParallelCore Client RESTful API
+        </SidebarItem>
       </SidebarItemGroup>
       <SidebarItemGroup name="User Guides">
         <SidebarItem>
-          ParallelCore CLI
+          ParallelCore Client CLI
+        </SidebarItem>
+        <SidebarItem>
+          ParallelCore Peer CLI
         </SidebarItem>
       </SidebarItemGroup>
     </div>

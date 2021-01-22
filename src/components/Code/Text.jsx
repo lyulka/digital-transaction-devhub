@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((t) => ({
   text: {
-    marginBottom: `${t.spacing(1)}px`,
+    marginBottom: `${t.spacing(2)}px`,
   },
 }));
 
@@ -14,7 +14,7 @@ export default function Text({ children }) {
   return (
     <Typography
       display="block"
-      variant="body1"
+      variant="body2"
       classes={{ root: classes.text }}
     >
       { children }

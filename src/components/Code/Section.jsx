@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((t) => ({
   section: {
-    marginBottom: `${t.spacing(6)}px`,
+    marginBottom: `${t.spacing(12)}px`,
   },
 }));
 
