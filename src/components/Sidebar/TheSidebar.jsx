@@ -52,32 +52,18 @@ export default function TheSidebar() {
           ParallelChain Network Architecture
         </SidebarItem>
         <SidebarItem>
-          ParallelCoreDB
-        </SidebarItem>
-        <SidebarItem>
-          Provable Immutability
-        </SidebarItem>
-        <SidebarItem>
           Glossary of terms
         </SidebarItem>
       </SidebarItemGroup>
-      <SidebarItemGroup name="Tutorials">
+      <SidebarItemGroup name="Code Walkthroughs">
         <SidebarItem to="/tutorials/writing-smart-contracts">
           Writing Smart Contracts
         </SidebarItem>
         <SidebarItem>
-          Writing Applications
-        </SidebarItem>
-      </SidebarItemGroup>
-      <SidebarItemGroup name="Interoperability">
-        <SidebarItem>
-          Worked Example - Commercial Paper
+          Interoperability Demo - Commercial Paper
         </SidebarItem>
         <SidebarItem>
-          Worked Example - Extending Commercial Paper
-        </SidebarItem>
-        <SidebarItem>
-          Worked Example - Secured Asset Transfer
+          Interoperability Demo - Secured Asset Transfer
         </SidebarItem>
       </SidebarItemGroup>
       <SidebarItemGroup name="Reference Documentation">
