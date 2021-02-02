@@ -6,7 +6,8 @@ import SidebarItem from './SidebarItem';
 
 const useStyles = makeStyles((t) => ({
   container: {
-    width: '240px',
+    flexBasis: '240px',
+    flexShrink: 0,
     height: '100%',
     backgroundColor: t.palette.neutral.gray,
     overflowY: 'scroll',
@@ -49,9 +50,12 @@ export default function TheSidebar() {
           Why ParallelChain?
         </SidebarItem>
         <SidebarItem>
+<<<<<<< HEAD
           ParallelChain Network Architecture
         </SidebarItem>
         <SidebarItem>
+=======
+>>>>>>> Add ParallelCore Client Go SDK.
           Glossary of terms
         </SidebarItem>
       </SidebarItemGroup>
@@ -67,7 +71,7 @@ export default function TheSidebar() {
         </SidebarItem>
       </SidebarItemGroup>
       <SidebarItemGroup name="Reference Documentation">
-        <SidebarItem>
+        <SidebarItem to="/references/parallelcore-client-go-sdk">
           ParallelCore Client Go SDK
         </SidebarItem>
         <SidebarItem>
@@ -75,14 +79,6 @@ export default function TheSidebar() {
         </SidebarItem>
         <SidebarItem>
           ParallelCore Client RESTful API
-        </SidebarItem>
-      </SidebarItemGroup>
-      <SidebarItemGroup name="User Guides">
-        <SidebarItem>
-          ParallelCore Client CLI
-        </SidebarItem>
-        <SidebarItem>
-          ParallelCore Peer CLI
         </SidebarItem>
       </SidebarItemGroup>
     </div>

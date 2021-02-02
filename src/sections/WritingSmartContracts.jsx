@@ -46,8 +46,8 @@ export default function WritingSmartContracts() {
             <li>
               <Text>
                 Invoke deployed Smart Contracts through: 1. Applications written
-                with the ParralelChain™ Client API, and 2. Using the ParallelChain™
-                Admin CLI.
+                with the ParallelChain™ Client API, and 2. Using the ParallelChain™
+                Peer CLI.
               </Text>
             </li>
           </ol>
@@ -275,7 +275,7 @@ type SmartContract interface {
               <code>in:</code> a generic slice of bytes. The <em>invoker</em> of
               the smart contract&mdash;typically either an application written using
               the ParallelChain Client SDK, or a system administrator using the
-              ParallelChain Admin CLI&mdash;passes this into an <code>Invoke</code>
+              ParallelChain Peer CLI&mdash;passes this into an <code>Invoke</code>
               function.
             </Text>
           </li>
@@ -318,7 +318,7 @@ client.Invoke("helloworld", []byte(in))
             the <code>Invoke</code>-able name ‘helloworld.’ In the next section,
             you will understand that this name is not a property of the source code itself,
             but something that you will have to define when you deploy a smart contract using the
-            <em>ParallelChain Admin CLI.</em>
+            <em> ParallelChain Peer CLI.</em>
           </Text>
         </TextOnly>
       </Section>
@@ -454,7 +454,7 @@ sudo -E /opt/parallelcore/sbin/parallelcore smartcontract register <SC-name>-<SC
           </TextSubHeading>
           <Text>
             When you invoke a smart contract, either using the ParallelChain Client API, or
-            the ParallelChain Admin CLI, your machine makes gRPC requests to machines in the
+            the ParallelChain Peer CLI, your machine makes gRPC requests to machines in the
             ParallelChain network, instructing them to load a smart contract you’ve specified
             and run its Handle method.
           </Text>

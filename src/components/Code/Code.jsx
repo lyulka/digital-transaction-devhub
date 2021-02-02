@@ -6,6 +6,9 @@ import Highlight from 'react-highlight';
 const useStyles = makeStyles((t) => ({
   code: {
     marginLeft: `${t.spacing(3)}px`,
+    '&pre': {
+      padding: 0,
+    },
   },
 }));
 

@@ -6,6 +6,7 @@ import TheTextAndCode from './Code/TheTextAndCode';
 
 // Sections
 import WritingSmartContracts from '../sections/WritingSmartContracts';
+import GodocParallelCoreClientSDK from '../sections/GodocParallelCoreClientSDK';
 
 const useStyles = makeStyles({
   root: {
@@ -26,6 +27,9 @@ export default function TheContent() {
           <TheTextAndCode>
             <WritingSmartContracts />
           </TheTextAndCode>
+        </Route>
+        <Route path="/references/parallelcore-client-go-sdk">
+          <GodocParallelCoreClientSDK />
         </Route>
       </Switch>
     </div>

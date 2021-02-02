@@ -9,11 +9,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <body>
-          <div className="App">
-            <TheContent />
-          </div>
-        </body>
+        <div className="App">
+          <TheContent />
+        </div>
       </Router>
     </ThemeProvider>
   );

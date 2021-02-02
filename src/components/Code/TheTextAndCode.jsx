@@ -5,7 +5,7 @@ const useStyles = makeStyles((t) => ({
   container: {
     flexGrow: 1,
     display: 'flex',
-    width: 'calc(100vh - 240px)',
+    flexBasis: 'calc(100vh - 240px)',
     position: 'relative',
   },
   textAndCodeContainer: {
