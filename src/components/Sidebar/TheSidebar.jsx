@@ -50,12 +50,6 @@ export default function TheSidebar() {
           Why ParallelChain?
         </SidebarItem>
         <SidebarItem>
-<<<<<<< HEAD
-          ParallelChain Network Architecture
-        </SidebarItem>
-        <SidebarItem>
-=======
->>>>>>> Add ParallelCore Client Go SDK.
           Glossary of terms
         </SidebarItem>
       </SidebarItemGroup>

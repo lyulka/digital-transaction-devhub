@@ -3,8 +3,10 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((t) => ({
   textOnly: {
-    width: '550px',
     padding: `0 ${t.spacing(3)}px 0 ${t.spacing(3)}px`,
+    [t.breakpoints.up('lg')]: {
+      width: '550px',
+    },
   },
 }));
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles((t) => ({
   container: {
-    flexGrow: 1,
     display: 'flex',
-    flexBasis: 'calc(100vh - 240px)',
+    width: 'calc(100vw - 240px)',
     position: 'relative',
   },
   textAndCodeContainer: {
@@ -35,16 +35,21 @@ const useStyles = makeStyles((t) => ({
 
 export default function TheTextAndCode({ children }) {
   const classes = useStyles();
+  const theme = useTheme();
+  const largeOrLarger = useMediaQuery(theme.breakpoints.up('lg'));
 
   return (
     <div className={classes.container}>
       <div className={classes.textAndCodeContainer}>
         { children }
       </div>
-      <div className={classes.backgroundsContainer}>
-        <div className={classes.textBackground} />
-        <div className={classes.codeBackground} />
-      </div>
+
+      { largeOrLarger && (
+        <div className={classes.backgroundsContainer}>
+          <div className={classes.textBackground} />
+          <div className={classes.codeBackground} />
+        </div>
+      )}
     </div>
   );
 }

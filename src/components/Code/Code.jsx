@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Highlight from 'react-highlight';
 
-const useStyles = makeStyles((t) => ({
+const useStyles = makeStyles({
   code: {
-    marginLeft: `${t.spacing(3)}px`,
-    '&pre': {
+    '& pre': {
+      // To cancel out styling applyed by GoDocs
       padding: 0,
+      margin: 0,
     },
   },
-}));
+});
 
 export default function Code({ children, language }) {
   const classes = useStyles();
