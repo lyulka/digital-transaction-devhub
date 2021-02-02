@@ -6,6 +6,7 @@ import TheTextAndCode from './Code/TheTextAndCode';
 
 // Sections
 import WritingSmartContracts from '../sections/WritingSmartContracts';
+import CommercialPaperTutorial from '../sections/CommercialPaperTutorial';
 import GodocParallelCoreClientSDK from '../sections/GodocParallelCoreClientSDK';
 
 const useStyles = makeStyles({
@@ -26,6 +27,11 @@ export default function TheContent() {
         <Route path="/tutorials/writing-smart-contracts">
           <TheTextAndCode>
             <WritingSmartContracts />
+          </TheTextAndCode>
+        </Route>
+        <Route path="/tutorials/commercial-paper-tutorial">
+          <TheTextAndCode>
+            <CommercialPaperTutorial />
           </TheTextAndCode>
         </Route>
         <Route path="/references/parallelcore-client-go-sdk">

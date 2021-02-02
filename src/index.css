@@ -15,3 +15,15 @@ code {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10pt;
 }
+
+.push-left1 {
+  margin-left: 8px !important;
+}
+
+.push-right1 {
+  margin-right: 8px !important;
+}
+
+.push-bot1 {
+  margin-bottom: 8px !important;
+}

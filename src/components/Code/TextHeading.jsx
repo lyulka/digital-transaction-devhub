@@ -4,9 +4,13 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((t) => ({
   text: {
+    padding: `0 ${t.spacing(3)}px 0 ${t.spacing(3)}px`,
     marginBottom: `${t.spacing(6)}px`,
     fontWeight: 'bold',
     color: t.palette.primary.dark,
+    [t.breakpoints.up('lg')]: {
+      width: '536px',
+    },
   },
 }));
 

@@ -57,11 +57,11 @@ export default function TheSidebar() {
         <SidebarItem to="/tutorials/writing-smart-contracts">
           Writing Smart Contracts
         </SidebarItem>
-        <SidebarItem>
-          Interoperability Demo - Commercial Paper
+        <SidebarItem to="/tutorials/commercial-paper-tutorial">
+          Commercial Paper Tutorial
         </SidebarItem>
         <SidebarItem>
-          Interoperability Demo - Secured Asset Transfer
+          Secured Asset Transfer Tutorial
         </SidebarItem>
       </SidebarItemGroup>
       <SidebarItemGroup name="Reference Documentation">

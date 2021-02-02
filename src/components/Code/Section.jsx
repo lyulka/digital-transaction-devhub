@@ -4,6 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((t) => ({
   section: {
     marginBottom: `${t.spacing(12)}px`,
+    '& li > p': {
+      [t.breakpoints.up('lg')]: {
+        paddingRight: `${t.spacing(8)}px`,
+      },
+    },
   },
 }));
 
