@@ -7,7 +7,6 @@ import { FutureButton } from 'dtl-react-components';
 const useStyles = makeStyles((t) => ({
   container: {
     width: '100%',
-    padding: `0 ${t.spacing(3)}px 0 ${t.spacing(3)}px`,
     marginBottom: `${t.spacing(4)}px`,
   },
   splitContainer: {
@@ -19,9 +18,9 @@ const useStyles = makeStyles((t) => ({
     width: '550px',
   },
   codeArea: {
+    padding: `0 ${t.spacing(3)}px`,
     [t.breakpoints.up('lg')]: {
       width: 'calc(100% - 550px)',
-      padding: `0 ${t.spacing(3)}px`,
     },
   },
   tabsContainer: {
@@ -106,6 +105,7 @@ export default function TextAndCode({ children, numTabs }) {
 
   return (
     <div className={classes.container}>
+      { children[0] }
       { codeArea }
     </div>
   );
